@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Siminar2_class work\\Class_work\\Class_work.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Class_work\\Class_work.csproj",
       "projectName": "Class_work",
-      "projectPath": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Siminar2_class work\\Class_work\\Class_work.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Class_work\\Class_work.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Siminar2_class work\\Class_work\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Обучение GB\\C#\\Siminar2\\Class_work\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

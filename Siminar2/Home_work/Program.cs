@@ -40,10 +40,11 @@ Console.WriteLine($"Your middle digit {number} of {num}!");
 
 int thirdDigit(int num)
 {
-    if (num<100)Console.WriteLine("There is no third digit!");
-    if (num>100 && num<1000) num = num % 10;  
+    if (num<100)Console.Write("There is no third digit in number  ");
+    if (num>100 && num<1000) num = num % 10;
+    if (num > 1000 && num < 9999) num = num/10 % 10;
     if (num > 1000 && num < 99999) num = num/100 % 10;
-    if (num > 99999) Console.WriteLine("System Error");
+    if (num > 99999) Console.Write("System Error by number  ");
     int num1 = num;
     return num1;
 }

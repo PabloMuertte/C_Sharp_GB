@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.AssemblyInfo.cs
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\bin\Debug\net6.0\Classwork.exe
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\bin\Debug\net6.0\Classwork.deps.json
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\bin\Debug\net6.0\Classwork.runtimeconfig.json
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\bin\Debug\net6.0\Classwork.dll
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\bin\Debug\net6.0\Classwork.pdb
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.dll
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\refint\Classwork.dll
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.pdb
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\Classwork.genruntimeconfig.cache
+C:\Users\User\Desktop\Обучение GB\C#\C_Sharp_GB\Siminar4\Classwork\obj\Debug\net6.0\ref\Classwork.dll

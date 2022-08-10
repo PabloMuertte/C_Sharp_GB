@@ -51,7 +51,7 @@ int MultplyOfDigits(int num)
         multiply=multiply*count;
         Console.Write($"{multiply}  ");
     }
-        return multiply;
+    return multiply;
 }
 Console.Write("Input integer number: ");
 int number = Convert.ToInt32(Console.ReadLine());

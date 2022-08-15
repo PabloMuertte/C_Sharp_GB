@@ -94,6 +94,95 @@ invertArray(array);
 */
 
 //Task 3 создать массив и найти в нем заданное пользователем число, вывсти да/ нет о его наличии.
+/*
+int [] CreateRandomArray(int size,int minValue, int maxValue)
+{
+    int[] newArray = new int[size];
+
+    for(int i=0; i< size; i++)
+    {
+        newArray[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return newArray;
+}
+
+void ShowArray(int [] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+    Console.WriteLine();
+}
+
+bool findDigit (int[]array, int X)
+{
+    for(int i = 0; i < array.Length; i++)
+    if (array[i] == X) return true;
+
+    return false;    
+}
+
+Console.Write("Input size of array:  ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element:  ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element:  ");
+int max = Convert.ToInt32(Console.ReadLine());
+Console.Write("input your digit which you want to find in array:  ");
+int X = Convert.ToInt32(Console.ReadLine());
+
+int [] array = CreateRandomArray(size,min,max);
+ShowArray(array);
+Console.WriteLine();
+bool find = findDigit(array, X);
+Console.WriteLine(find);
+*/
+
+
+// Задайте одномерный массив из 12 случайных чисел. Найдите кол-во элементов массива, значение которых лежат в отрезке [10,99].
+/*
+int [] CreateRandomArray(int size,int minValue, int maxValue)
+{
+    int[] newArray = new int[size];
+
+    for(int i=0; i< size; i++)
+    {
+        newArray[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return newArray;
+}
+
+void ShowArray(int [] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+    Console.WriteLine();
+}
+
+int QuantitySearchdigits (int[]array)
+{
+    int qsearchdigits = 0;
+        for (int i=0; i < array.Length; i++)
+            if(array[i] > 9 && array[i] <100) qsearchdigits++;
+    return qsearchdigits;
+}
+Console.Write("Input size of array:  ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element:  ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element:  ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+
+int [] array = CreateRandomArray(size,min,max);
+ShowArray(array);
+Console.WriteLine();
+int SearchDiaposon = QuantitySearchdigits(array);
+Console.Write(SearchDiaposon);
+
+*/
+
+//Найдите произведение пар чисел водномерном массиве, Парой считаем первое и последнее, второе и предпоследнее число и т.д. 
+// Результат запишите в новом массиве.
 
 int [] CreateRandomArray(int size,int minValue, int maxValue)
 {
@@ -113,35 +202,53 @@ void ShowArray(int [] array)
     Console.WriteLine();
 }
 
-bool findDigit (int Y, int X)
+int SumArray (int [] array)
 {
-    if (Y == X) return true;
-    else return false;
-}
+    int sum = 0;
+    int num1 = 0;
+    int num2 = 0;
 
-int Compare (int [] array)
-{
-    int compare = 0;
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i< array.Length/2; i++)
     {
-        compare = compare + array[i];
+        num1 = array[i];
+        num2 = array[array.Length-1-i];
+        sum = num1 + num2;
+        Console.Write($"{sum}"+" ");
     }
-    return compare;
+    return sum;
 }
 
-Console.Write("Input size of array:  ");
+int arrayLenght(int [] array)
+{
+    int NewSize = array.Length/2;
+    return NewSize;
+}
+
+
+int [] newArray (int newSize,int sum)
+{
+    int[] result = new int[newSize];
+    for (int i = 0; i < newSize; i++)
+        result[i] = sum;
+
+    
+return result;
+}
+
+Console.Write("Input even number size of array:  ");
 int size = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min possible value of element:  ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max possible value of element:  ");
-int max = Convert.ToInt32(Console.ReadLine());
-Console.Write("input your digit which you want to find in array:  ");
-int X = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Input min possible value of element:  ");
+int min = 1;
+//Console.Write("Input max possible value of element:  ");
+int max = 100;
+
 
 int [] array = CreateRandomArray(size,min,max);
 ShowArray(array);
 Console.WriteLine();
-int Y = Compare(array);
-bool find = findDigit(Y,X);
-Console.WriteLine(find);
+int sum = SumArray(array);
+Console.WriteLine();
+int newSize = arrayLenght(array);
+int [] Array1 = newArray(newSize,sum);
+ShowArray(Array1);
 

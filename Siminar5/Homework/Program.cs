@@ -108,43 +108,43 @@ int Sum = sumOfnotEvennumbersofarray(array);
 Console.WriteLine();
 Console.WriteLine($"Sum of your not even number {Sum}");
 
-*/
 
 // Task 37 Задайте Массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.
 
-int [] CreateRandomArray(int size,int minValue, int maxValue)
+double [] CreateArray(int size)
 {
-    int[] newArray = new int[size];
+    double [] newArray = new double [size];
 
-    for(int i=0; i< size; i++)
+    for(int i=0; i < size; i++)
     {
-        newArray[i] = new Random().Next(minValue, maxValue + 1);
+        Console.Write($"{i+1} element of {size}: ");
+        newArray[i] = Convert.ToDouble(Console.ReadLine());
     }
     return newArray;
 }
 
-void ShowArray(int [] Array)
+void ShowArray(double [] Array)
 {
     for(int i = 0; i < Array.Length; i++)
         Console.Write(Array[i] + "  ");
 
 }
 
-int difference (int [] array)
+double difference (double [] array)
 {
-    int max = 0;
-    int min = 0;
-    int dif = 0;
+    double max = 0;
+    double min = 0;
+    double dif = 0;
     for( int i = 0; i< array.Length; i++)
     {
         if(array[i]> max) max = array[i];
-        min = array[i];
+        else min = array[i];
         dif = max - min;
         
     }
     Console.WriteLine($"min digit ({min})");
     Console.WriteLine($"max digit ({max})");
-    return dif;
+return dif;
 
 }
 
@@ -152,13 +152,15 @@ Console.Write("Input size of array:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
 //Console.Write("Input min possible value of element:  ");
-int min = 100; //Convert.ToInt32(Console.ReadLine());
+//int min = 100; //Convert.ToInt32(Console.ReadLine());
 //Console.Write("Input max possible value of element:  ");
-int max = 999; //Convert.ToInt32(Console.ReadLine());
+//int max = 999; //Convert.ToInt32(Console.ReadLine());
 
-int [] array = CreateRandomArray(size,min,max);
-Console.Write($"Your random array of {size} numbers is ");
+double [] array = CreateArray(size);
+Console.Clear();
+Console.WriteLine("Your array following:");
 ShowArray(array);
 Console.WriteLine();
-int dif = difference(array);
+double dif = difference(array);
 Console.WriteLine($"Diffirence between max and min elements of array  is {dif}");
+/*

@@ -52,10 +52,10 @@ ShowArray(array);
 Console.Write($"] is {quantityOfEvenNumber(array)} and it is digit [ ");
 PrintEvenNumber(array);
 Console.Write("]");
-
+*/
 
 // Task 36 Задайте одномерный массив, заполненый случайными числами. Найдите сумму элементов, стоящих на нечетных позициях.
-
+/*
 int [] CreateRandomArray(int size,int minValue, int maxValue)
 {
     int[] newArray = new int[size];
@@ -108,9 +108,9 @@ int Sum = sumOfnotEvennumbersofarray(array);
 Console.WriteLine();
 Console.WriteLine($"Sum of your not even number {Sum}");
 
-
+*/
 // Task 37 Задайте Массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.
-
+/*
 double [] CreateArray(int size)
 {
     double [] newArray = new double [size];
@@ -163,4 +163,4 @@ ShowArray(array);
 Console.WriteLine();
 double dif = difference(array);
 Console.WriteLine($"Diffirence between max and min elements of array  is {dif}");
-/*
+*/

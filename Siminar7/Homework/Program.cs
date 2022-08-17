@@ -1,6 +1,6 @@
 ﻿// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 //m = 3, n = 4.
-
+/*
 double [,] createRandom2dArray(int rows, int columns,double minValue, double maxValue)
 {
     double [,] newArray = new double[rows,columns];
@@ -41,3 +41,110 @@ Console.Clear();
 
 double [,] array = createRandom2dArray(Rows,Columns,MinValue,MaxValue);
 Show2dArray(array);
+*/
+
+//Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+//и возвращает значение этого элемента или же указание, что такого элемента нет.
+/*
+
+int [,] createRandom2dArray(int rows, int columns,int minValue, int maxValue)
+{
+    int [,] newArray = new int[rows,columns];
+
+    for( int i = 0; i < rows; i++)
+    {
+        for(int j=0; j<columns; j++)
+        {
+            newArray[i,j] = new Random().Next(minValue,maxValue + 1);
+        }
+    }
+    return newArray;
+}
+
+void Show2dArray(int [,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j]+" ");
+        }
+        Console.WriteLine ();
+    }
+}
+
+int Search (int [,] array,int find, int MinValue, int MaxValue)
+{
+    int S = 0;
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            if(array[i,j] == find) S=1;
+            if(find < MinValue || find > MaxValue) S=2;
+        }
+        
+    }
+    return S;
+}
+
+
+//Console.Write("Input number of rows: ");
+int Rows = 5; //Convert.ToInt32(Console.ReadLine());
+//Console.Write("Input number of columns: ");
+int Columns = 5; //Convert.ToInt32(Console.ReadLine());
+//Console.Write("Input minValue: ");
+int MinValue = 1; //Convert.ToInt32(Console.ReadLine());
+//Console.Write("Input maxValue: ");
+int MaxValue = 20; //Convert.ToInt32(Console.ReadLine());
+Console.Write("Input your Digit between 1 and 10: ");
+int Find = Convert.ToInt32(Console.ReadLine());
+
+int [,] array = createRandom2dArray(Rows,Columns,MinValue,MaxValue);
+Show2dArray(array);
+int search = Search(array,Find,MinValue,MaxValue);
+
+if (search==1) Console.WriteLine($"You digit {Find} is in array!");
+if (search==0) Console.WriteLine($"You digit {Find} not founded in array!");
+if (search==2) Console.WriteLine("Your digit not accepted for this array!");
+*/
+
+//Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+
+void Show2dArray(int [,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j]+" ");
+        }
+        Console.WriteLine ();
+    }
+}
+
+void Average (int [,] Array)
+{
+    double A = 0;
+    for(int i = 0; i < Array.GetLength(0); i++)
+    {
+        for(int j = 0, k = 0;  j == k; j++, k++)
+        {
+            if (j==k) A = A + Array[i,j];
+            {
+                Console.Write(A);
+            }
+            
+        } 
+          
+    }
+    
+}
+
+
+int[,] array = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, {8, 4, 2, 4 } };
+
+Show2dArray(array);
+Average(array);
+//Console.Write(Column1/array.GetLength(0));

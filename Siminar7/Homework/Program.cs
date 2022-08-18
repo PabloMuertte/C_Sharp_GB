@@ -124,27 +124,18 @@ void Show2dArray(int [,] array)
     }
 }
 
-void Average (int [,] Array)
+int[,] array1 = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, {8, 4, 2, 4 } };
+
+Show2dArray(array1);
+
+Console.WriteLine();
+for (int i = 0; i < array1.GetLength(1); i++)
 {
-    double A = 0;
-    for(int i = 0; i < Array.GetLength(0); i++)
+    double arithmeticMean = 0;
+    for (int j = 0; j < array1.GetLength(0) ; j++)
     {
-        for(int j = 0, k = 0;  j == k; j++, k++)
-        {
-            if (j==k) A = A + Array[i,j];
-            {
-                Console.Write(A);
-            }
-            
-        } 
-          
+        arithmeticMean += array1[j, i];
     }
-    
+    arithmeticMean = Math.Round(arithmeticMean / array1.GetLength(0), 2);
+    Console.WriteLine($"Arithmetic Mean of Column № {i+1} is {arithmeticMean}");
 }
-
-
-int[,] array = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, {8, 4, 2, 4 } };
-
-Show2dArray(array);
-Average(array);
-//Console.Write(Column1/array.GetLength(0));

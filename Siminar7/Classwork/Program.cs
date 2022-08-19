@@ -42,9 +42,7 @@ Show2dArray(array);
 */
 
 
-// Task 4
-// Задайте двумерный массив. Найдите сумму элементов, 
-// находящихся на главной диагонали с индексами (0,0); (1;1) и т.д.
+
 
 
 // Task 2
@@ -184,16 +182,14 @@ void Show2dArray(int [,] array)
     }
 }
 
-void Sum (int [,] array)
+int Sum (int [,] array)
 {
     int A = 0;
     for(int j = 0, k = 0; k < array.GetLength(0); j++, k++)
         {
-            A = A + array[k,j];
-            
-            Console.Write($"{A}  ");
+                    A = A + array[k,j];           
         }
-        Console.WriteLine ();
+    return A;
 }
 
 Console.Write("Input number of rows: ");
@@ -209,4 +205,6 @@ int [,] Array = createRandom2dArray(Rows,Columns,MinValue,MaxValue);
 Show2dArray(Array);
 Console.WriteLine ();
 
-Sum(Array);
+int sum = Sum(Array);
+
+Console.WriteLine(sum);

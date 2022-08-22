@@ -186,9 +186,8 @@ int Sum (int [,] array)
 {
     int A = 0;
     for(int j = 0, k = 0; k < array.GetLength(0); j++, k++)
-        {
-                    A = A + array[k,j];           
-        }
+        A += array[k,j];           
+        
     return A;
 }
 
